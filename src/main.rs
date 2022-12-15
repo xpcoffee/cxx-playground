@@ -18,6 +18,8 @@ mod ffi {
         // fn (&self: Multibuf) {...}     <--- ?
         type MultiBuf;
 
+        fn to_string(&self) -> String;
+
         fn next_chunk(buf: &mut MultiBuf) -> &[u8];
     }
 
@@ -36,6 +38,12 @@ mod ffi {
 pub struct MultiBuf {
     chunks: Vec<Vec<u8>>,
     pos: usize,
+}
+
+impl MultiBuf {
+    fn to_string(&self) -> String {
+        self.pos.to_string() + " | " + self.chunks.len().to_string().as_str()
+    }
 }
 
 pub fn next_chunk(buf: &mut MultiBuf) -> &[u8] {
