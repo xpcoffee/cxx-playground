@@ -1,5 +1,5 @@
-#include "cxx-demo/include/blobstore.h"
-#include "cxx-demo/src/main.rs.h"
+#include "cxx-playground/include/blobstore.h"
+#include "cxx-playground/src/main.rs.h"
 #include <functional>
 #include <string>
 #include <iostream>

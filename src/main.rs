@@ -24,7 +24,7 @@ mod ffi {
     }
 
     unsafe extern "C++" {
-        include!("cxx-demo/include/blobstore.h");
+        include!("cxx-playground/include/blobstore.h");
 
         type BlobstoreClient;
 
