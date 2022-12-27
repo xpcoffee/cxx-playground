@@ -46,7 +46,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "cxx-demo"
+name = "cxx-playground"
 version = "0.1.0"
 dependencies = [
  "cxx",

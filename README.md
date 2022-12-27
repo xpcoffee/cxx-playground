@@ -4,3 +4,9 @@
 
 This repo is a personal test of using CXX to define a foreign-function-interface between rust and C++.
 
+
+## Building and running
+
+```shell
+cargo clean && cargo run
+```
